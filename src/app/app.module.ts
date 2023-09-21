@@ -11,7 +11,7 @@ import { CoreModule } from './@core/core.module';
 import { ThemeModule } from './@theme/theme.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
+import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule } from 'ngx-google-analytics';
 import { NebulaModule } from './nebula.module';
 
 @NgModule({
@@ -24,7 +24,8 @@ import { NebulaModule } from './nebula.module';
     NebulaModule,
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
-    NgxGoogleAnalyticsModule.forRoot('G-17TQTS07G0')
+    NgxGoogleAnalyticsModule.forRoot('G-0TLM9HYE2L'),
+    NgxGoogleAnalyticsRouterModule
   ],
   bootstrap: [AppComponent],
 })
